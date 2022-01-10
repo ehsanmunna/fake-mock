@@ -19,6 +19,7 @@ app.get('/test', function (req, res) {
 })
 
 // start the server in the port 9000 !
-app.listen(9000, function () {
-    console.log('Example app listening on port 9000.');
+const port = 9000;
+app.listen(port, function () {
+    console.log('Example app listening on port 9000. url is: http://localhost:' + port);
 });
